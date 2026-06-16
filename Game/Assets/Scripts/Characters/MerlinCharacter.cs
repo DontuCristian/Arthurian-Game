@@ -4,7 +4,7 @@ public class MerlinCharacter : BaseCharacter
 {
     public override void Move(Vector2 direction)
     {
-        transform.Translate(direction * (3f * Time.deltaTime));
+        transform.Translate(direction * (4f * Time.deltaTime));
     }
     public override void BasicAttack() {}
     public override void UseSkill1() {}

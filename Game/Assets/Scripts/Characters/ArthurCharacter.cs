@@ -8,7 +8,7 @@ public class ArthurCharacter : BaseCharacter
     {
         transform.Translate(direction * (5f * Time.deltaTime));
     }
-    public void BasicAttack() {}
-    public void UseSkill1() {}
-    public void UseUltimate() {}
+    public override void BasicAttack() {}
+    public override void UseSkill1() {}
+    public override void UseUltimate() {}
 }

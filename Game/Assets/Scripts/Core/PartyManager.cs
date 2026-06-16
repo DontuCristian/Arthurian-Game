@@ -8,7 +8,7 @@ public class PartyManager : MonoBehaviour
     [SerializeField]
     private List<BaseCharacter> _party;
 
-    private int _activeCharacterIndex;
+    private int _activeCharacterIndex = 0;
 
     public BaseCharacter ActiveCharacter
     {
@@ -22,13 +22,17 @@ public class PartyManager : MonoBehaviour
 
     public void SwitchToNextCharacter()
     {
+        _party[_activeCharacterIndex].CompanionAI.enabled = true;
+        
         _activeCharacterIndex++;
 
         if (_activeCharacterIndex >= _party.Count)
         {
             _activeCharacterIndex = 0;
         }
-
+        
+        _party[_activeCharacterIndex].CompanionAI.enabled = false;
+        
         Debug.Log($"Now controlling {ActiveCharacter.name}");
     }
 }
