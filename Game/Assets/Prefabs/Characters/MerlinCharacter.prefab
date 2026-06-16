@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4700467749816322014}
   - component: {fileID: 6407770204274248145}
-  - component: {fileID: 2254802405232144199}
+  - component: {fileID: 8927027207261102403}
   m_Layer: 0
-  m_Name: ArthurCharacter
+  m_Name: MerlinCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0.024693727, b: 1, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &2254802405232144199
+--- !u!114 &8927027207261102403
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,6 +101,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2881894982237666999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91bd9a2376ff5424dab840d05a577fa9, type: 3}
+  m_Script: {fileID: 11500000, guid: 9aa476a6bd6a5094894eae65235f17af, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ArthurCharacter
+  m_EditorClassIdentifier: Assembly-CSharp::MerlinCharacter
