@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MerlinAI : CompanionAI
+public class ArthurAI : CompanionAI
 {
     [SerializeField] protected float _minFollowDist = 1.5f;
     [SerializeField] protected float _maxFollowDist = 6f;

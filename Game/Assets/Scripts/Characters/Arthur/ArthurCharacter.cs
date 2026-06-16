@@ -6,7 +6,11 @@ public class ArthurCharacter : BaseCharacter
     
     public override void Move(Vector2 direction)
     {
-        transform.Translate(direction * (5f * Time.deltaTime));
+        base.Move(direction);
+        
+        Vector2 currentPosition = new Vector2(transform.position.x, transform.position.y);
+        
+        _rb.MovePosition(currentPosition + direction * (_stats.Speed * Time.deltaTime));
     }
     public override void BasicAttack() {}
     public override void UseSkill1() {}

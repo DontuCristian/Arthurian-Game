@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &164458571 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2881894982237666999, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-  m_PrefabInstance: {fileID: 1344746879}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +264,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1373505539756614878, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
+      propertyPath: _partyManager
+      value: 
+      objectReference: {fileID: 2002396172}
     - target: {fileID: 2881894982237666999, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
       propertyPath: m_Name
       value: MerlinCharacter
@@ -313,44 +312,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9d313013ecaa2bc4795561d9b747246a, type: 3}
-    - target: {fileID: 6407770204274248145, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
-      propertyPath: m_Color.b
-      value: 1
+    - target: {fileID: 6241810125310844127, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2881894982237666999, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2145360539}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
---- !u!114 &471210581 stripped
+--- !u!114 &569750963 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8927027207261102403, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5525065939583239724, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
+  m_PrefabInstance: {fileID: 1344746879}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91bd9a2376ff5424dab840d05a577fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArthurCharacter
+--- !u!114 &710095343 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1404727136337257110, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
   m_PrefabInstance: {fileID: 471210580}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145360533}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9aa476a6bd6a5094894eae65235f17af, type: 3}
@@ -367,6 +354,14 @@ PrefabInstance:
     - target: {fileID: 2881894982237666999, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
       propertyPath: m_Name
       value: ArthurCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3997926941334078479, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
+      propertyPath: _partyManager
+      value: 
+      objectReference: {fileID: 2002396172}
+    - target: {fileID: 4228541963686996237, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4700467749816322014, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -408,77 +403,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-      propertyPath: m_Size.x
-      value: 1.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-      propertyPath: m_Size.y
-      value: 1.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: ca5af4cbf405bd24f811e9e18f15ebf2, type: 3}
-    - target: {fileID: 6407770204274248145, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407770204274248145, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2881894982237666999, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1344746886}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
---- !u!114 &1344746880 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2254802405232144199, guid: 3bf90004985e4564b8e3fbe371f5fbfe, type: 3}
-  m_PrefabInstance: {fileID: 1344746879}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164458571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91bd9a2376ff5424dab840d05a577fa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ArthurCharacter
---- !u!114 &1344746886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164458571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56fa9c31ba3ad5541bbcaed853943718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MerlinAI
-  _partyManager: {fileID: 2002396172}
-  _minFollowDist: 1.5
-  _maxFollowDist: 6
-  _idealFollowDist: 3
 --- !u!1 &1904706449
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,8 +532,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PartyManager
   _party:
-  - {fileID: 1344746880}
-  - {fileID: 471210581}
+  - {fileID: 569750963}
+  - {fileID: 710095343}
 --- !u!114 &2002396173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,11 +591,31 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: d3ae78aa-c566-4648-8e86-27d4eb55306e
     m_ActionName: 'Movement/SwitchCharacters[/Keyboard/e,/XInputControllerWindows/buttonNorth]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2002396174}
+        m_TargetAssemblyTypeName: PlayerBrain, Assembly-CSharp
+        m_MethodName: BasicAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1aa2ca09-fa41-47e3-b62c-e1996eba4f11
+    m_ActionName: 'Gameplay/Basic Attack[/DualShock4GamepadHID/buttonWest,/XInputControllerWindows/buttonWest,/XInputControllerWindows1/buttonWest,/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 02bf6201-f407-4839-8619-2c96f329f737
+    m_ActionName: 'Gameplay/Special Attack[/DualShock4GamepadHID/buttonSouth,/XInputControllerWindows/buttonSouth,/XInputControllerWindows1/buttonSouth,/Keyboard/q]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Movement
+  m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 330585545}
 --- !u!114 &2002396174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,27 +657,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   _camera: {fileID: 330585545}
---- !u!1 &2145360533 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2881894982237666999, guid: e8331a5286ff60545a612d9302cf4796, type: 3}
-  m_PrefabInstance: {fileID: 471210580}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2145360539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145360533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56fa9c31ba3ad5541bbcaed853943718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MerlinAI
-  _partyManager: {fileID: 2002396172}
-  _minFollowDist: 1.5
-  _maxFollowDist: 6
-  _idealFollowDist: 3
+  _offset: {x: 0, y: 0, z: -10}
+  _smoothTime: 0.2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
