@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a26b7d9dd962b64085a8dbcd55c5989, type: 3}
   m_Name: Merlin
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStats
-  <Speed>k__BackingField: 10
+  <Speed>k__BackingField: 3
   <MaxHealth>k__BackingField: 100
   <Power>k__BackingField: 10
   <Defence>k__BackingField: 0

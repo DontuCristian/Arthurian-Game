@@ -8,7 +8,7 @@ public class PlayerBrain : MonoBehaviour
     
     // Members
     private Vector2 _moveInput;
-    
+
     void Update()
     {
         _partyManager.ActiveCharacter.Move(_moveInput);

@@ -21,14 +21,14 @@ public class MerlinAI : CompanionAI
 
         if (distance > _maxFollowDist)
         {
-            Follow(1f);
+            Follow(1.5f);
         }
         else if (distance > _idealFollowDist)
         {
             float speedPercentage =
                 Mathf.Lerp(
-                    0.5f,
-                    1f,
+                    0f,
+                    1.5f,
                     Mathf.InverseLerp(
                         _idealFollowDist,
                         _maxFollowDist,

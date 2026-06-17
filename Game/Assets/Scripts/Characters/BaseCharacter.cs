@@ -8,6 +8,7 @@ public abstract class BaseCharacter : MonoBehaviour
     
     public CompanionAI CompanionAI { get; private set; }
     public Vector2 MovementInput { get; private set; }
+    public Vector2 CharacterDirection { get; private set; }
     
     public bool IsMoving => MovementInput.magnitude > 0.01f;
     
@@ -17,11 +18,21 @@ public abstract class BaseCharacter : MonoBehaviour
     {
         CompanionAI = GetComponent<CompanionAI>();
         _rb = GetComponent<Rigidbody2D>();
+        
+        CharacterDirection = Vector2.right;
     }
 
+    protected virtual void FixedUpdate()
+    {
+        _rb.MovePosition(_rb.position + MovementInput * _stats.Speed * Time.fixedDeltaTime);
+    }
+
+    // Don't call in Update every frame
     virtual public void Move(Vector2 direction)
     {
-       MovementInput = direction; 
+        MovementInput = direction; 
+        if(direction.magnitude > 0.01f)
+            CharacterDirection = direction.normalized;
     }
     
     virtual public void BasicAttack(){}

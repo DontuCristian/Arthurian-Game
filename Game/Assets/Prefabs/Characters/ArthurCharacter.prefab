@@ -8,17 +8,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8074105088153550093, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322391322385273938, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
+      propertyPath: m_Size.x
+      value: 0.87890625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322391322385273938, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
+      propertyPath: m_Size.y
+      value: 1.8632812
+      objectReference: {fileID: 0}
     - target: {fileID: 2322391322385273938, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ca5af4cbf405bd24f811e9e18f15ebf2, type: 3}
+      objectReference: {fileID: 21300000, guid: 2f121d6b93bddc543945aef99a5a20bc, type: 3}
     - target: {fileID: 2322391322385273938, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2322391322385273938, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 3612857735957265161, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3612857735957265161, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       propertyPath: m_LocalPosition.y
@@ -34,15 +50,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3612857735957265161, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.000000059604645
       objectReference: {fileID: 0}
     - target: {fileID: 3612857735957265161, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.00000062584877
       objectReference: {fileID: 0}
     - target: {fileID: 3612857735957265161, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.00000009685755
       objectReference: {fileID: 0}
     - target: {fileID: 3612857735957265161, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -56,6 +72,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3612857735957265161, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6336783439374585557, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       propertyPath: m_Name
       value: ArthurCharacter
@@ -66,7 +86,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7318610171681848869, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       propertyPath: m_Size.y
-      value: 1.61
+      value: 1.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 7318610171681848869, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.88
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2330577561711851186, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
@@ -79,6 +103,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6336783439374585557, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5176361340567498322}
+    - targetCorrespondingSourceObject: {fileID: 6336783439374585557, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 933111380980987840}
   m_SourcePrefab: {fileID: 100100000, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
 --- !u!1 &6880788356605959377 stripped
 GameObject:
@@ -98,6 +125,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArthurCharacter
   _stats: {fileID: 11400000, guid: 8de2c7eebb49e4e4182d29fe0a6ea7f1, type: 2}
+  _attackRange: 2
+  _attackHalfAngle: 45
+  _enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &5176361340567498322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,7 +142,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30e3dfd186892848b82051aeac12b65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArthurAI
-  _partyManager: {fileID: 0}
   _minFollowDist: 0.7
   _maxFollowDist: 4
   _idealFollowDist: 2
+--- !u!114 &933111380980987840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6880788356605959377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.ShadowCaster2D
+  m_ShadowGroup: 0
+  m_Priority: 1
+  m_ComponentVersion: 5
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.43945312, y: -0.000000059604645, z: 0}
+  - {x: -0.43945312, y: 1.8632812, z: 0}
+  - {x: 0.4394536, y: 1.8632812, z: 0}
+  - {x: 0.4394536, y: -0.000000059604645, z: 0}
+  m_ShapePathHash: 0
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 7862532161412033569}
+  m_ShadowShape2DProvider:
+    rid: 4199254115009953858
+  m_ShadowCastingSource: 2
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: 0, y: 0.8800049, z: 0}
+      m_Extent: {x: 0.34498596, y: 0.9299927, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowShape2DSource: {fileID: 7862532161412033569}
+  references:
+    version: 2
+    RefIds:
+    - rid: 4199254115009953858
+      type: {class: ShadowShape2DProvider_Collider2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 
+--- !u!70 &7862532161412033569 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7318610171681848869, guid: 06f0731661c55b34fb3f8864fdf31e70, type: 3}
+  m_PrefabInstance: {fileID: 616358159654867460}
+  m_PrefabAsset: {fileID: 0}
