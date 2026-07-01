@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ba3f44e35c472dd49812b3d8e7982513
+guid: 5cb7180c70f3a9642869e3563c0dd296
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2411380935906427617
-    second: Temp_Unlicensed_Arthur_NormalMap_0
+      213: 5587066562488062071
+    second: Merlin_Height16_RGBA_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,9 +55,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 1
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Temp_Unlicensed_Arthur_NormalMap_0
+      name: Merlin_Height16_RGBA_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 225
-        height: 477
+        width: 332
+        height: 537
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e20ad66f22f67120800000000000000
-      internalID: 2411380935906427617
+      spriteID: 7705091ef6f398d40800000000000000
+      internalID: 5587066562488062071
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Temp_Unlicensed_Arthur_NormalMap_0: 2411380935906427617
+      Merlin_Height16_RGBA_0: 5587066562488062071
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
