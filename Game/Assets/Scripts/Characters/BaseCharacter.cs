@@ -7,6 +7,9 @@ public abstract class BaseCharacter : MonoBehaviour
     [SerializeField] protected CharacterStats _stats;
     
     public CompanionAI CompanionAI { get; private set; }
+    public HumanController Controller { get; private set; }
+
+    public bool IsPlayerControlled => Controller != null;
     public Vector2 MovementInput { get; private set; }
     public Vector2 CharacterDirection { get; private set; }
     
@@ -20,6 +23,19 @@ public abstract class BaseCharacter : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         
         CharacterDirection = Vector2.right;
+    }
+
+    internal void SetController(HumanController controller)
+    {
+        Controller = controller;
+
+        if (CompanionAI == null)
+            return;
+
+        CompanionAI.enabled = controller == null;
+
+        if (controller != null)
+            CompanionAI.SetFollowTarget(null);
     }
 
     protected virtual void FixedUpdate()

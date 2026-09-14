@@ -2,18 +2,17 @@ using UnityEngine;
 
 public class CompanionAI : MonoBehaviour
 {
-    protected PartyManager _partyManager;
     protected BaseCharacter _attachedCharacter;
 
-    void Awake()
+    public BaseCharacter FollowTarget { get; private set; }
+
+    protected virtual void Awake()
     {
         _attachedCharacter = GetComponent<BaseCharacter>();
-        
-        _partyManager = FindObjectOfType<PartyManager>();
+    }
 
-        if (_partyManager == null)
-        {
-            Debug.LogError("No party manager found");
-        }
+    public void SetFollowTarget(BaseCharacter target)
+    {
+        FollowTarget = target;
     }
 }
