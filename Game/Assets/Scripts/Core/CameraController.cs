@@ -41,5 +41,4 @@ public class CameraController : MonoBehaviour
             ref _velocity,
             _smoothTime);
     }
-
 }

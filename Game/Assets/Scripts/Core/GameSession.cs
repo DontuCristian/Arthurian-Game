@@ -1,4 +1,5 @@
 using UnityEngine;
+using FishNet.Managing;
 
 namespace Arthur.Core
 {
@@ -45,6 +46,9 @@ namespace Arthur.Core
                 return;
             }
 
+            if (mode == GameMode.OnlineMultiplayer)
+                EnsureNetworkManager();
+
             Context = new GameContext(
                 mode,
                 role,
@@ -55,6 +59,12 @@ namespace Arthur.Core
             _gameMode = CreateMode(mode);
             _gameMode.Initialize(Context);
         }
+
+        public void StartHostSession() =>
+            StartSession(GameMode.OnlineMultiplayer, NetworkingRole.Host);
+
+        public void StartClientSession() =>
+            StartSession(GameMode.OnlineMultiplayer, NetworkingRole.Client);
 
         public void StopSession()
         {
@@ -72,6 +82,15 @@ namespace Arthur.Core
                 GameMode.OnlineMultiplayer => new OnlineMultiplayerMode(),
                 _ => throw new System.ArgumentOutOfRangeException(nameof(mode), mode, null)
             };
+        }
+
+        private static void EnsureNetworkManager()
+        {
+            if (Object.FindAnyObjectByType<NetworkManager>() != null)
+                return;
+
+            GameObject networkManagerObject = new GameObject("NetworkManager");
+            networkManagerObject.AddComponent<NetworkManager>();
         }
     }
 }
